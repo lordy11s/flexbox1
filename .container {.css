@@ -1,0 +1,36 @@
+.container {
+    margin: 0 auto;
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+   grid-template-rows: repeat(auto-fit, minmax (100px,1fr));
+}
+.box {
+    border: 7px;
+    background-color: aqua;
+    font-size: 50px;
+
+}
+.item-1 {
+    /* grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-area: 1 / 1 / 4 / 9; */
+}
+item-2 {
+    /* grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    -ms-grid-row-span: 2;
+    -ms-grid-column-span: 2;
+    grid-area: 3 / 5 / 7 / 8;
+    z-index: 1; */
+}
+
+.item-3 {
+    /* grid-area: 4 / 1 / -1 / -1; short-hand (starting row then starting column then end row then end column) */
+}
+.item-2 {
+    /* grid-area: main; */
+
+}
